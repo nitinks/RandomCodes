@@ -3,7 +3,7 @@
 
 #
 # Takes n for loops and n*4 if loops for calculation.
-# Ran with 64Kib and 0.0105sec on Hackerearth for 50k random records.
+# Ran with 64Kib and 0.105sec on Hackerearth for 50k random records.
 
 # Holding individual spike blocks.
 Blocks = []
