@@ -1,4 +1,4 @@
-# Find best trade from a given set of trading prices per second.
+# Find best trade from a given set of trading prices set.
 # Memory efficient and fastest method for finding best trade prices.
 
 #
