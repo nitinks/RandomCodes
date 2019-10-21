@@ -156,3 +156,14 @@ class MacAddrGen:
 
     def IssueMac(self):
         return self.macDB.GetMacAddr()
+
+# Unit test code.
+macAddrObj = MacAddrGen(startMac='FF:FF:FF:FF:FF:00', macCount=20)
+print (macAddrObj.IssueMac())
+mac = macAddrObj.IssueMac()
+print (mac)
+print (macAddrObj.IsAllocatted(mac))
+print (macAddrObj.Free(mac))
+print (macAddrObj.IsFree(mac))
+print (macAddrObj.Allocate(mac))
+print (macAddrObj.IsAllocatted(mac))
