@@ -19,4 +19,4 @@ class FrenchDeck:
         return self._cards[position]
         
 Deck = FrenchDeck()
-print ("Total Cards in French Deck : {}.format(len(Deck)))
+print ("Total Cards in French Deck : {}".format(len(Deck)))
