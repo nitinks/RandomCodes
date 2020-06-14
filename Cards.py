@@ -5,7 +5,7 @@ import collections
 Cards = collections.namedtuple('Card',['rank', 'suit'])
 
 class FrenchDeck:
-    ranks = [str(n) for rank in range(2,11)] + list('JQKA')
+    ranks = [str(rank) for rank in range(2,11)] + list('JQKA')
     suit = 'spades diamonds clubs hearts'.split()
     
     def __init__(self):
