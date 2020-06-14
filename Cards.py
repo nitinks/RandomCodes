@@ -49,7 +49,20 @@ print("Whether card in Deck: ",card in Deck)
 
 print (Deck)
 
+import random
+class ShuffledDeck(FrenchDeck):
+    def __init__(self):
+        self.sequence = list(range(52))
+        random.shuffle(self.sequence)
+        super(FrenchDeck, self).__init__()
 
+    def __getitem__(self, item):
+        return super(FrenchDeck, self).__getitem__(self.sequence[item])
+
+ShuffleDeck = ShuffledDeck()
+
+print ("First Card {}".format(ShuffleDeck[0]))
+print ("Last Card {}".format(ShuffleDeck[51]))
 #  nsharma@nsharma-mbps ~/Documents/GitHub/RandomCodes $ python3 Cards.py
 # Total Cards in French Deck : 52
 # Second Card is : Card(rank='3', suit='spades')
