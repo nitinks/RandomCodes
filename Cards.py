@@ -1,4 +1,4 @@
-# Pythonic Card Deck
+# Pythonic Card Deck Example.
 
 import collections
 
