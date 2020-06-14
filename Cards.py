@@ -10,7 +10,7 @@ class FrenchDeck:
     
     def __init__(self):
         self._cards = [ Card(rank, suit) for suit in self.suit 
-                                         for rank in self.rank]
+                                         for rank in self.ranks]
                                          
     def __len__(self):
         return len(self._cards)
